@@ -1,0 +1,35 @@
+{
+  "local": {
+    "outputDir": "dist",
+    "buildCommand": "yarn build",
+    "zipDefaultName": "压缩包默认名称",
+    "outputZipDir": "package"
+  },
+  "server": [
+    {
+      "alias": "xx系统:公司测试机",
+      "type": "ssh",
+      "ssh": {
+        "host": "xxx.baidu.com",
+        "port": "8527",
+        "username": "ubuntu",
+        "password": "xxx",
+        "privateKey": ""
+      },
+      "ftp": {
+        "host": "xxx.baidu.com",
+        "port": "21",
+        "user": "ubuntu",
+        "password": "ubuntu",
+        "connTimeout": 60000,
+        "pasvTimeout": 60000,
+        "keepalive": 60000
+      },
+      "project": {
+        "backup": false,
+        "path": "/www/wwwroot/html/baidu",
+        "rmExclude": ["backup","ie","config"]
+      }
+    }
+  ]
+}
