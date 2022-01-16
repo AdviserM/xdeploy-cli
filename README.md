@@ -17,7 +17,7 @@ npm install -g xdeploy-cli
 
 在项目目录下执行 ```xdeploy init``` 创建xdeploy.json
 
-```json
+```javascript
 // xdeploy.json
 {
   "local": {
@@ -29,7 +29,7 @@ npm install -g xdeploy-cli
   "server": [
     {
       "alias": "xx系统:公司测试机",  // 服务器标识 可自定义 
-      "type": "ssh",  //部署方式 可选值 ssh ftp 必填
+      "type": "ssh",  //部署方式 可选值 ssh ftp 必填 填了啥类型在下边就配置啥服务器
       "ssh": {					//ssh配置
         "host": "xxx.baidu.com", //必填
         "port": "8527",    //选填 默认为22
